@@ -44,7 +44,7 @@ const About = () => {
 
             <div className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight">
               <div className="flex flex-col items-center lg:items-start">
-                <div className="flex flex-wrap justify-center lg:justify-start">
+                <div className="flex  flex-wrap justify-center lg:justify-start">
                   <span>Hi! I'm Amaan</span>
                   <span className="inline-block min-w-[100px] ml-2 text-purple-400">
                     <ReactTyped
