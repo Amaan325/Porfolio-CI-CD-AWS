@@ -39,7 +39,7 @@ const About = () => {
           {/* Text Content */}
           <div className="flex flex-col gap-6 lg:max-w-[60%] text-center lg:text-left">
             <div className="inline-flex items-center justify-center w-52 h-10 text-white text-md font-semibold shadow-md mx-auto lg:mx-0 bg-gradient-to-r from-[#8e5496] via-[#7154ac] to-[#212d85] border border-gray-300">
-              Welcome to my Portfolio
+              Welcome to my Resume
             </div>
 
             <div className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight">
