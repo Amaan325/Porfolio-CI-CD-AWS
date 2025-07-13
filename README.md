@@ -1,12 +1,56 @@
-# React + Vite
+# 🌩️ Cloud Resume Challenge (MERN + AWS, Node.js)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a completed implementation of the [Cloud Resume Challenge](https://cloudresumechallenge.dev/), combining my existing MERN portfolio with a fully serverless AWS backend. It features a visitor counter using DynamoDB, a Lambda function written in Node.js, API Gateway integration, full HTTPS delivery through CloudFront, and CI/CD automation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Resume Website
 
-## Expanding the ESLint configuration
+🌐 **URL:** [https://your-cloudfront-distribution-url.cloudfront.net](https://d15qh5wfawd1vh.cloudfront.net/)  
+🔢 **Visitor Counter:** Real-time count powered by DynamoDB and Lambda (Displayed at footer)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+### ☁️ AWS Services
+
+| Service         | Purpose                                                                 |
+|-----------------|-------------------------------------------------------------------------|
+| **Amazon S3**   | Hosts the static resume website (React build)                          |
+| **CloudFront**  | HTTPS-enabled CDN for global distribution                              |
+| **DynamoDB**    | Stores and updates visitor count                                        |
+| **API Gateway** | Serves as an endpoint for frontend JavaScript                          |
+| **AWS Lambda**  | Node.js function to access/update DynamoDB                             |
+| **IAM**         | Manages fine-grained roles and permissions                              |
+| **AWS SAM**     | Defines backend infrastructure as code                                 |
+
+### 💻 Front-End
+
+- React (MERN portfolio front end)
+- HTML/CSS/JS for resume page
+- JavaScript `fetch()` to retrieve visitor count from API
+
+### 🖥 Back-End
+
+- Node.js (AWS Lambda)
+- DynamoDB (on-demand pricing)
+- REST API via API Gateway
+
+### 🔄 CI/CD
+
+- **Frontend:** GitHub Actions deploy static site to S3 + CloudFront cache invalidation
+- **Backend:** GitHub Actions build and deploy SAM stack after test pass
+
+---
+
+## 📈 Features
+
+- ✅ Resume hosted via S3 and CloudFront (HTTPS)
+- ✅ Visitor counter using Node.js Lambda + DynamoDB
+- ✅ REST API via API Gateway
+- ✅ Fully automated CI/CD with GitHub Actions
+- ✅ Backend defined using AWS SAM (Infrastructure as Code)
+
+---
+
