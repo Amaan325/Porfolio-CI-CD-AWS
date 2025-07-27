@@ -69,7 +69,7 @@ const About = () => {
             </div>
 
             <p className="text-md poppins-light text-gray-300 max-w-xl mx-auto lg:mx-0">
-              Full-stack web developer skilled in the MERN stack (MongoDB,
+              Fll-stack web developer skilled in the MERN stack (MongoDB,
               Express.js, React.js, Node.js) with experience in Vue.js, Redux,
               and Firebase. Proficient in Tailwind CSS, Material UI, Bootstrap,
               and deploying apps using AWS EC2 and PM2. Currently exploring

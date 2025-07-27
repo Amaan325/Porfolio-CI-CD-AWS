@@ -1,4 +1,36 @@
+# Node.js
 /node_modules
+
+# Build output
 /dist
 /.cache
+
+# Environment variables
 .env
+
+# Terraform state and backup files
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Terraform-generated lock file (optional to ignore)
+# Uncomment if you don’t want to track provider versions
+# .terraform.lock.hcl
+
+# Lambda zip files (auto-generated)
+*.zip
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+.eggs/
+pip-wheel-metadata/
