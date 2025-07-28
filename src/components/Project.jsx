@@ -10,17 +10,20 @@ const Project = () => {
     {
       title: "Full-Stack Blog Platform",
       image: Project1,
-      link: "http://51.21.195.234:9700/",
+      link: "https://github.com/Amaan325/AWS-Blog-App",
+      type: "View Code",
     },
     {
       title: "Pryme (Cleaning Services Website)",
       image: Project2,
       link: "https://amaan325.github.io/Pryme/",
+      type: "View Live",
     },
     {
       title: "PodStream (Podcast Streaming Platform)",
       image: Project3,
-      link: null,
+      link: "https://github.com/Amaan325/PodStream",
+      type: "View Code",
     },
   ];
 
@@ -85,7 +88,7 @@ const Project = () => {
                       rel="noopener noreferrer"
                       className="mt-2 inline-block bg-white text-[#212d85] font-semibold px-4 py-1.5 rounded-full text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200"
                     >
-                      View Live
+                      {project.type}
                     </a>
                   )}
                 </div>
